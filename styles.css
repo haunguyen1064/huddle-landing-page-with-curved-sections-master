@@ -76,10 +76,14 @@ ul {
 li {
     margin-bottom: 1em;
 }
+i{
+    margin-bottom: 20px;
+}
 .btn-secondary{
     background-color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%);
 }
+
  .btn:hover {
     background-color: hsl(321, 100%, 78%);
     border-color: hsl(321, 100%, 78%);
