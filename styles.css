@@ -14,24 +14,41 @@ h1, h2, h3 {
 }
 h2 {
     font-size: 3rem;
+    margin-bottom: 3rem;
 }
 .btn-outline-primary {
     color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%) ;
     border-radius: 25px;
-    width: 35%;
+    width: 140px;
 }
 .btn-primary {
     color: white;
     background-color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%);
     border-radius: 35px;
-    width: 35%;
-    height: 65px;
     margin-top: 10px;
+    box-shadow: 5px 8px 8px rgb(94, 83, 83);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+/* **************HEADER**************** */
+.logo{
+    width: 25%;
+}
+
+.trybutton {
+    width: 35%;
+    font-size: 0.5em;
+}
+/* **************STAT**************** */
+
+.stat-container {
+    text-align: left;
+}
+
 .stat-number {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
 }
 .stat-item {
@@ -40,26 +57,34 @@ h2 {
 }
 
 .stat-col img {
-    width: 25%;
-    
+    width: 20%;
+}
+
+/* **************ILLU**************** */
+
+.illu-image {
+   margin: 50px 0;
 }
 .col-lg-6 img {
     max-width: 100%;
 }
-.illu-left{
-    padding-left: 80px;
-}
+
 .illu-item {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+/* **************FOOTER**************** */
+
+
 .footer-top {
     background: url(images/bg-footer-top-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position-y: bottom;
     height: 160px;
-    margin-top: 200px;  
-
+    margin: 200px 0 0;
+    width: 100%;
 }
 
 .footer{
@@ -67,6 +92,7 @@ h2 {
     color: white;
     height: auto;
     padding: 50px 50px 5px 50px;
+    line-height: 2;
 
 }
 ul {
@@ -82,6 +108,8 @@ i{
 .btn-secondary{
     background-color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%);
+    padding-top: 0.4em;
+    padding-bottom: .4em;
 }
 
  .btn:hover {
@@ -91,4 +119,64 @@ i{
 i:hover {
     background-color:hsl(321, 100%, 78%);
     cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .btn-outline-primary {
+        width: 35%;
+
+    }
+    .btn-primary{
+        width: 35%;
+    }
+} 
+
+@media (max-width: 500px) {
+    .stat-col{
+        width: 100%;
+    }
+    .stat-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .illu-image {
+        order: 0;
+    }
+    .illu-text {
+        order: 1;
+        text-align: center;
+    }
+
+    /* **************FOOTER**************** */
+
+    .footer{
+        padding: 0 2rem;
+        font-size: 0.9em;
+    }
+    .footer-left {
+        order: 1;
+ 
+    }
+    .footer-right {
+        order: 0;
+    }
+    .input {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+   
+    .footer-button {
+        width: 100%;
+        text-align: right;
+        
+    }
+    .footer-logo {
+        margin-top: 5em;
+    }
+    
+    
+    .footer-text ul {
+        margin-top: 3em;
+    }
 }
