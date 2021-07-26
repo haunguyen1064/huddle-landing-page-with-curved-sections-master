@@ -85,7 +85,7 @@ h2 {
     background-size: contain;
     background-position-y: bottom;
     height: 160px;
-    margin: 200px 0 0;
+    margin: 200px 0 -2px;
     width: 100%;
 }
 
