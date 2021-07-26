@@ -113,6 +113,8 @@ i{
     border-color: hsl(322, 100%, 66%);
     padding-top: 0.4em;
     padding-bottom: .4em;
+    margin-top: 0.5em;
+
 }
 
  .btn:hover {
